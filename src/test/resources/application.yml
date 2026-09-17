@@ -1,0 +1,16 @@
+spring:
+  main:
+    banner-mode: off
+
+problem:
+  base-type-uri: https://errors.example.org/
+  mappings:
+    "[org.example.problem.TestApplication$LegacyMappedException]":
+      status: 422
+      code: INSUFFICIENT_BALANCE
+      detail: The account balance is lower than the requested amount.
+      log-level: INFO
+
+logging:
+  level:
+    org.example.problem: WARN
