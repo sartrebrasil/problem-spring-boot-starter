@@ -13,7 +13,7 @@ import org.springframework.http.ProblemDetail;
 import org.springframework.security.web.access.AccessDeniedHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
+import tools.jackson.databind.ObjectMapper;
 
 import jakarta.validation.ConstraintViolationException;
 

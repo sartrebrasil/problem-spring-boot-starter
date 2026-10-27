@@ -1,6 +1,6 @@
 package org.example.problem;
 
-import com.fasterxml.jackson.databind.exc.InvalidFormatException;
+import tools.jackson.databind.exc.InvalidFormatException;
 import org.springframework.beans.TypeMismatchException;
 import org.springframework.context.MessageSourceResolvable;
 import org.springframework.context.i18n.LocaleContextHolder;
@@ -212,7 +212,7 @@ public class GlobalProblemAdvice extends ResponseEntityExceptionHandler {
 	}
 
 	private List<ApiProblem.Violation> violations(InvalidFormatException invalidFormatException) {
-		String field = invalidFormatException.getPath().getLast().getFieldName();
+		String field = invalidFormatException.getPath().getLast().getPropertyName();
 		Object value = invalidFormatException.getValue();
 		String message = buildInvalidValueMessage(field, value, invalidFormatException.getTargetType());
 		return List.of(this.factory.violation(field, message, value));
