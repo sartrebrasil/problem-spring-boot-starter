@@ -1,4 +1,4 @@
-package org.example.problem;
+package com.example.problem;
 
 import tools.jackson.databind.exc.InvalidFormatException;
 import org.springframework.beans.TypeMismatchException;

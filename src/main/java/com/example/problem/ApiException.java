@@ -1,4 +1,4 @@
-package org.example.problem;
+package com.example.problem;
 
 import java.util.Collections;
 import java.util.LinkedHashMap;

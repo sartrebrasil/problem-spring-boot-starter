@@ -1,4 +1,4 @@
-package org.example.problem;
+package com.example.problem;
 
 import java.net.URI;
 import java.util.List;

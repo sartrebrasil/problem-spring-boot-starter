@@ -1,4 +1,4 @@
-package org.example.problem;
+package com.example.problem;
 
 import org.springframework.boot.autoconfigure.AutoConfiguration;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
