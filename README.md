@@ -8,7 +8,7 @@ no `@ExceptionHandler` written per project.
 
 ```xml
 <dependency>
-    <groupId>com.example</groupId>
+    <groupId>com.example.problem</groupId>
     <artifactId>problem-spring-boot-starter</artifactId>
     <version>1.0-SNAPSHOT</version>
 </dependency>
